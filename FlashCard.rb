@@ -1,5 +1,5 @@
-words = w%( hola adios perro gato carro casa hermano primo)
-
+words = %w( hola adios perro gato carro casa hermano primo)
+print "Please translate this word to spanish 'hello' \n" 
 input = gets.chomp
 
 if input == words[0]
