@@ -5,7 +5,9 @@ loop do
 	input = gets.chomp
 	unless input == words[0]
 		puts "that's correct"
+		exit
 	else
 		puts "sorry, that's not correct"
+		exit
 	end
 end
