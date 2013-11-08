@@ -1,9 +1,10 @@
-words = %w( hola adios perro gato carro casa hermano primo)
+spanishWords = %w( hola adios perro gato carro casa hermano primo)
+englishWords = %w( hello bye dog cat car house brother cousin )
 
 loop do
-print "Please translate this word to spanish 'hello' \n" 
+print "Please translate " + englishWords[0] + " to spanish \n" 
 write= gets.chomp
-	unless write == words[0]
+	unless write == spanishWords[0]
 		puts "That's not correct! you write: #{write}, the correct word was 'hola'!"
 		puts "Let's try another one"
 	else
@@ -13,7 +14,7 @@ write= gets.chomp
 
 print "Now let's try this one 'bye' \n" 
 write= gets.chomp
-	unless write == words[1]
+	unless write == spanishWords[1]
 		puts "That's not correct! you write: #{write}, the correct word was 'adios'!"
 		puts "Let's try another one"
 		exit
