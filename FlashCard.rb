@@ -9,7 +9,7 @@ loop do
 print englishWords[0] + "\n" 
 write= gets.chomp
 	unless write == spanishWords[0]
-		puts "That's not correct! you write: #{write}, the correct word was 'hola'!"
+		puts "That's not correct! you write: #{write}, the correct word was '#{spanishWords[0]}'!"
 		puts "Let's try another one"
 	else
 		score += 1
@@ -20,12 +20,15 @@ write= gets.chomp
 print englishWords[1] + "\n" 
 write= gets.chomp
 	unless write == spanishWords[1]
-		puts "That's not correct! you write: #{write}, the correct word was 'adios'!"
-		puts "Let's try another one"
-		exit
+		puts "That's not correct! you write: #{write}, the correct word was '#{spanishWords[0]}'!"
+		#puts "Let's try another one"
+		#exit
 	else
 		score += 1
 		puts "that's correct!"
+		puts "You had #{score} correct words!"
 		exit
-	end	
+	end
+puts "You had #{score} correct words!"
+exit
 end
