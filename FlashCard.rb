@@ -14,20 +14,17 @@ write= gets.chomp
 	else
 		score += 1
 		puts "that's correct!"
-		#exit
 	end
 
 print englishWords[1] + "\n" 
 write= gets.chomp
 	unless write == spanishWords[1]
 		puts "That's not correct! you write: #{write}, the correct word was '#{spanishWords[1]}'!"
-		#puts "Let's try another one"
-		#exit
+		puts "Let's try another one"
 	else
 		score += 1
 		puts "that's correct!"
 		puts "You had #{score} correct words!"
-		exit
 	end
 
 print englishWords[2] + "\n" 
@@ -38,7 +35,6 @@ write= gets.chomp
 	else
 		score += 1
 		puts "that's correct!"
-		#exit
 	end	
 	
 print englishWords[3] + "\n" 
@@ -49,7 +45,6 @@ write= gets.chomp
 	else
 		score += 1
 		puts "that's correct!"
-		#exit
 	end	
 
 print englishWords[4] + "\n" 
@@ -60,7 +55,6 @@ write= gets.chomp
 	else
 		score += 1
 		puts "that's correct!"
-		#exit
 	end		
 
 print englishWords[5] + "\n" 
@@ -71,7 +65,6 @@ write= gets.chomp
 	else
 		score += 1
 		puts "that's correct!"
-		#exit
 	end	
 
 print englishWords[6] + "\n" 
@@ -82,7 +75,6 @@ write= gets.chomp
 	else
 		score += 1
 		puts "that's correct!"
-		#exit
 	end	
 
 print englishWords[7] + "\n" 
@@ -93,7 +85,7 @@ write= gets.chomp
 	else
 		score += 1
 		puts "that's correct!"
-		#exit
+		exit
 	end		
 puts "You had #{score} correct words!"
 exit
